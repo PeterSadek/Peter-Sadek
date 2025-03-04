@@ -1,20 +1,23 @@
-{{ "banner.css" | asset_url |  stylesheet_tag}}
-
-
+{{ "banner.css" | asset_url | stylesheet_tag }}
 
 <section class="banner">
-<p>banner</p>
+  <p>banner</p>
 </section>
 
 {% schema %}
-    {
-        "name": "Banner Section",
-        "settings": [
-            {
-                "type": "image_picker",
-                "label": "Logo",
-                "id": "logo"
-            }
-            ]
-    }
-    {% endschema %}
+  {
+    "name": "Banner Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Logo",
+        "id": "logo"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Banner Section"
+      }
+    ]
+  }
+{% endschema %}

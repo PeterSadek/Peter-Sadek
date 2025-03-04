@@ -1,16 +1,17 @@
-{{ "grid.css" | asset_url |  stylesheet_tag}}
-
-
+{{ "grid.css" | asset_url | stylesheet_tag }}
 
 <section class="grid">
-    <p>grid</p>
+  <p>grid</p>
 </section>
 
 {% schema %}
-    {
-        "name": "Grid Section",
-        "settings": [
-            
-            ]
-    }
-    {% endschema %}
+  {
+    "name": "Grid Section",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Grid Section"
+      }
+    ]
+  }
+{% endschema %}
