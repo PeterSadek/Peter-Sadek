@@ -1,24 +1,20 @@
 {{ "banner.css" | asset_url |  stylesheet_tag}}
 
-{% schema %}
-{
-    "name": "Banner Section",
-    "settings": [
-        {
-            "type": "image_picker",
-            "label": "Logo",
-            "id": "logo"
-        }
-        ]
-}
-{% endschema %}
+
 
 <section class="banner">
-    <div class="banner-head">
-        <img src="../assets/logo.svg" alt="A logo of tisso vison" class="logo" width="100%" height="auto">
-        <p></p>
-        <a class="btn" href="#"></a>
-    </div>
-    <div class="banner-body"></div>
-    <div class="banner-foot"></div>
+<p>banner</p>
 </section>
+
+{% schema %}
+    {
+        "name": "Banner Section",
+        "settings": [
+            {
+                "type": "image_picker",
+                "label": "Logo",
+                "id": "logo"
+            }
+            ]
+    }
+    {% endschema %}
