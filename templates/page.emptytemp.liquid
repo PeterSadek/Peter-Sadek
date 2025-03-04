@@ -1,0 +1,14 @@
+{% layout none %} <!-- This ensures no default layout is applied -->
+
+<!DOCTYPE html>
+<html lang="{{ shop.locale }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  {{ content_for_header }} <!-- Required for Shopify scripts and styles -->
+</head>
+<body>
+  {{ content_for_layout }} <!-- This renders the page content -->
+</body>
+</html>
