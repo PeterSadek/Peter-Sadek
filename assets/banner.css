@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'JostMedium';
+    src: url('https://cdn.shopify.com/s/files/1/0643/1313/1096/files/Jost-Medium.ttf?v=1741106365');
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+/* Banner head styles */
+.banner-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+}
+
+.nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo {
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 40px;
+}
+
+svg {
+    margin-left: 10px;
+}
+
+.btn.light {
+    background: linear-gradient(to right, #000 50%, #FFF544 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: black;
+    transition: all 300ms ease-out;
+}
+
+.btn.light:hover {
+    color: #fff;
+    background-position: left bottom;
+}
+
+.btn.light:hover svg path {
+    fill: #fff
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+
+}
+
+.burger-icon {
+    display: block;
+}
+
+.x-icon {
+    display: none;
+}
+
+/* Banner body styles */
+.top {
+    max-width: 1440px;
+}
+
+.bottom {
+    display: flex;
+}
+
+.bottom .right {
+    width: 2300px;
+}
+
+.bottom .mobile-text {
+    display: none;
+}
+
+.left {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.left h2 {
+    font-family: 'JostMedium';
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0px;
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+.left p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    margin: 50px 0;
+}
+
+.dark {
+    background: linear-gradient(to right, #FFF544 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    transition: all 300ms ease-out;
+}
+
+.btn.dark:hover {
+    background-position: left bottom;
+    color: #000;
+}
+
+.btn.dark:hover svg path {
+    fill: #000;
+}
+
+/* Banner foot styles */
+.banner-foot {
+    padding: 10px 0;
+}
+
+.banner-foot p {
+    font-size: 16px;
+    line-height: 13.42px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.banner-foot .foot-mobile-text {
+    display: none;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+
+    /* Banner head on mobile */
+    .banner-head {
+        padding: 20px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: 16px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        padding: 25px 0;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .menu-toggle.active .burger-icon {
+        display: none;
+    }
+
+    .menu-toggle.active .x-icon {
+        display: block;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    /* Banner body on mobile */
+    .banner-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner .mobile-text {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .banner .desktop-text {
+        display: none;
+    }
+
+    .top {
+        position: relative;
+        height: 300px;
+        background-image: url('https://cdn.shopify.com/s/files/1/0643/1313/1096/files/banner-image-mobile.svg?v=1741130078');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .dark {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .top img {
+        display: none;
+    }
+
+    .bottom .right {
+        display: none;
+    }
+
+    .bottom {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom .left {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+        line-height: 30px;
+        white-space: nowrap;
+    }
+
+    .banner .bottom p {
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    .btn {
+        width: 70%
+    }
+
+    /* Banner foot on mobile */
+    .banner-foot .foot-desktop-text {
+        display: none;
+    }
+
+    .banner-foot .foot-mobile-text {
+        display: block;
+    }
+
+    .banner-foot p {
+        font-size: 14px;
+        line-height: 13.42px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner-body .right {
+        display: none;
+    }
+}

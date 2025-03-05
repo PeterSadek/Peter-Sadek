@@ -1,7 +1,88 @@
 {{ "banner.css" | asset_url | stylesheet_tag }}
+<script src="{{'banner.js' |  asset_url}}" defer></script>
 
 <section class="banner">
-  <p>banner</p>
+
+  <div class="banner-head">
+    <span class="menu-toggle">
+      <img
+        class="x-icon"
+        src="{{'x-icon.svg' |  asset_url}}"
+        alt="x icon"
+        width="13px"
+        height="13px">
+      <img
+        class="burger-icon"
+        src="{{'burger-icon.svg' |  asset_url}}"
+        alt="Burger icon"
+        width="18px"
+        height="10px">
+    </span>
+    <div class="logo">
+      <img
+        src="{% if section.settings.logo == blank %} https://cdn.shopify.com/s/files/1/0643/1313/1096/files/logo.svg?v=1741110784 {% endif  %} {{section.settings.logo |  image_url}}"
+        alt="A logo of tisso vison"
+        width="100%"
+        height="auto">
+    </div>
+    <div class="nav">
+      <p>Find the ideal gift for your loved ones.</p>
+      <a href="#" class="btn light">CHOOSE GIFT
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="13"
+          viewBox="0 0 28 13"
+          fill="none">
+          <path d="M1.11108 5.74396L0.361084 5.74396L0.361084 7.24396L1.11108 7.24396L1.11108 5.74396ZM27.1487 7.02429C27.4416 6.7314 27.4416 6.25652 27.1487 5.96363L22.3757 1.19066C22.0828 0.897765 21.6079 0.897765 21.315 1.19066C21.0221 1.48355 21.0221 1.95843 21.315 2.25132L25.5577 6.49396L21.315 10.7366C21.0221 11.0295 21.0221 11.5044 21.315 11.7973C21.6079 12.0902 22.0828 12.0902 22.3757 11.7973L27.1487 7.02429ZM1.11108 7.24396L26.6183 7.24396L26.6183 5.74396L1.11108 5.74396L1.11108 7.24396Z" fill="black" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="banner-body">
+
+    <div class="top">
+      <img
+        src="{{ 'banner-image.svg' |  asset_url }}"
+        alt="Banner image"
+        width="100%"
+        height="auto">
+    </div>
+
+    <div class="bottom">
+      <div class="left">
+        <h2>The Gift Guide</h2>
+        <p class="desktop-text">Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>
+        <p class="mobile-text">Discover Joy: Your Ultimate Holiday Gift Destination.</p>
+        <a href="#" class="btn dark">SHOP NOW
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="13"
+            viewBox="0 0 28 13"
+            fill="none">
+            <path d="M1.11108 5.74396L0.361084 5.74396L0.361084 7.24396L1.11108 7.24396L1.11108 5.74396ZM27.1487 7.02429C27.4416 6.7314 27.4416 6.25652 27.1487 5.96363L22.3757 1.19066C22.0828 0.897765 21.6079 0.897765 21.315 1.19066C21.0221 1.48355 21.0221 1.95843 21.315 2.25132L25.5577 6.49396L21.315 10.7366C21.0221 11.0295 21.0221 11.5044 21.315 11.7973C21.6079 12.0902 22.0828 12.0902 22.3757 11.7973L27.1487 7.02429ZM1.11108 7.24396L26.6183 7.24396L26.6183 5.74396L1.11108 5.74396L1.11108 7.24396Z" fill="white" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="right">
+        <img
+          src="{{'banner-image2.svg' | asset_url}}"
+          alt="Banner image"
+          width="100%"
+          height="auto">
+      </div>
+    </div>
+
+  </div>
+  <div class="banner-foot">
+    <p class="foot-desktop-text">SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL</p>
+    <p class="foot-mobile-text">SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR</p>
+  </div>
+
+  <div class="newSection"></div>
 </section>
 
 {% schema %}
