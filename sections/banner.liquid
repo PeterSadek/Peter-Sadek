@@ -26,8 +26,8 @@
         height="auto">
     </div>
     <div class="nav">
-      <p>Find the ideal gift for your loved ones.</p>
-      <a href="#" class="btn light">CHOOSE GIFT
+      <p>{{ section.settings.banner_head_text }}</p>
+      <a href="{{section.settings.button_1_url}}" class="btn light">{{ section.settings.banner_button_text }}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -52,10 +52,10 @@
 
     <div class="bottom">
       <div class="left">
-        <h2>The Gift Guide</h2>
-        <p class="desktop-text">Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>
+        <h2>{{ section.settings.banner_main_header }}</h2>
+        <p class="desktop-text">{{ section.settings.banner_main_text }}</p>
         <p class="mobile-text">Discover Joy: Your Ultimate Holiday Gift Destination.</p>
-        <a href="#" class="btn dark">SHOP NOW
+        <a href="{{section.settings.banner_2_url}}" class="btn dark">{{ section.settings.banner_button2_text }}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="28"
@@ -78,7 +78,7 @@
 
   </div>
   <div class="banner-foot">
-    <p class="foot-desktop-text">SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL</p>
+    <p class="foot-desktop-text">{{ section.settings.banner_foot_text }}</p>
     <p class="foot-mobile-text">SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR</p>
   </div>
 
@@ -93,6 +93,49 @@
         "type": "image_picker",
         "label": "Logo",
         "id": "logo"
+      },
+      {
+        "type": "text",
+        "label": "Banner Head Text",
+        "id": "banner_head_text",
+        "default": "Find the ideal gift for your loved ones."
+      },
+      {
+        "type": "text",
+        "label": "Banner Main Header",
+        "id": "banner_main_header",
+        "default": "The Gift Guide"
+      },
+      {
+        "type": "text",
+        "label": "Banner Main Text",
+        "id": "banner_main_text",
+        "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+      }, {
+        "type": "text",
+        "label": "Banner Foot Text",
+        "id": "banner_foot_text",
+        "default": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+      }, {
+        "type": "text",
+        "label": "Banner Button Text",
+        "id": "banner_button_text",
+        "default": "CHOOSE GIFT"
+      }, {
+        "type": "url",
+        "label": "Button 1 URL",
+        "id": "button_1_url",
+        "default": "/collections"
+      }, {
+        "type": "text",
+        "label": "Banner Button2 Text",
+        "id": "banner_button2_text",
+        "default": "SHOP NOW"
+      }, {
+        "type": "url",
+        "label": "Button 2 URL",
+        "id": "button_2_url",
+        "default": "/collections"
       }
     ],
     "presets": [
