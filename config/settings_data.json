@@ -138,27 +138,91 @@
         "settings": {
           "color_scheme": "scheme-1"
         }
+      },
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "banner_head_text": "Find the ideal gift for your loved ones.",
+          "banner_main_header": "The Gift Guide",
+          "banner_main_text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+          "banner_foot_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+          "banner_button_text": "CHOOSE GIFT",
+          "button_1_url": "shopify://collections",
+          "banner_button2_text": "SHOP NOW",
+          "button_2_url": "shopify://collections"
+        }
+      },
+      "grid": {
+        "type": "grid",
+        "blocks": {
+          "product_W644YG": {
+            "type": "product",
+            "settings": {
+              "product": "dark-denim-top"
+            }
+          },
+          "product_pgAQyF": {
+            "type": "product",
+            "settings": {
+              "product": "classic-varsity-top"
+            }
+          },
+          "product_UYWDM7": {
+            "type": "product",
+            "settings": {
+              "product": "classic-leather-jacket"
+            }
+          },
+          "product_VEfVrh": {
+            "type": "product",
+            "settings": {
+              "product": "chequered-red-shirt"
+            }
+          },
+          "product_hW9Hna": {
+            "type": "product",
+            "settings": {
+              "product": "blue-silk-tuxedo"
+            }
+          },
+          "product_nXEJGe": {
+            "type": "product",
+            "settings": {
+              "product": "black-leather-bag"
+            }
+          }
+        },
+        "block_order": [
+          "product_W644YG",
+          "product_pgAQyF",
+          "product_UYWDM7",
+          "product_VEfVrh",
+          "product_hW9Hna",
+          "product_nXEJGe"
+        ],
+        "settings": {}
       }
     },
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#FFFFFF",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#FFFFFF",
+          "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       },
       "scheme-2": {
         "settings": {
-          "background": "#F3F3F3",
+          "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#F3F3F3",
+          "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
@@ -167,10 +231,10 @@
         "settings": {
           "background": "#242833",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
+          "text": "#ffffff",
+          "button": "#ffffff",
           "button_label": "#000000",
-          "secondary_button_label": "#FFFFFF",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       },
@@ -178,21 +242,21 @@
         "settings": {
           "background": "#121212",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
+          "text": "#ffffff",
+          "button": "#ffffff",
           "button_label": "#121212",
-          "secondary_button_label": "#FFFFFF",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       },
       "scheme-5": {
         "settings": {
-          "background": "#334FB4",
+          "background": "#334fb4",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#334FB4",
-          "secondary_button_label": "#FFFFFF",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#334fb4",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       }
