@@ -13,8 +13,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 50px;
+    padding: 25px 50px;
     transition: box-shadow 0.3s ease-in-out;
+    position: relative;
 }
 
 .banner-head.banner-head-mobile {
@@ -23,10 +24,13 @@
 
 .nav {
     display: flex;
-    width: 60%;
-    justify-content: space-between;
-    align-items: center;
     background-color: #fff;
+}
+
+.nav p {
+    position: absolute;
+    left: 47%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -175,11 +179,18 @@ svg {
         left: 0;
         width: 100%;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 25px 0;
         opacity: 0;
         max-height: 0;
         overflow: hidden;
         transition: opacity 300ms ease-out, max-height 300ms ease-out;
+    }
+
+    .nav p {
+        position: static;
+        transform: none;
     }
 
     .nav.active {
