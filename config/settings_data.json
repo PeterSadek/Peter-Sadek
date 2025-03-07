@@ -155,28 +155,10 @@
       "grid": {
         "type": "grid",
         "blocks": {
-          "product_W644YG": {
+          "product_nXEJGe": {
             "type": "product",
             "settings": {
-              "product": "dark-denim-top"
-            }
-          },
-          "product_pgAQyF": {
-            "type": "product",
-            "settings": {
-              "product": "classic-varsity-top"
-            }
-          },
-          "product_UYWDM7": {
-            "type": "product",
-            "settings": {
-              "product": "classic-leather-jacket"
-            }
-          },
-          "product_VEfVrh": {
-            "type": "product",
-            "settings": {
-              "product": "chequered-red-shirt"
+              "product": "black-leather-bag"
             }
           },
           "product_hW9Hna": {
@@ -185,20 +167,38 @@
               "product": "blue-silk-tuxedo"
             }
           },
-          "product_nXEJGe": {
+          "product_VEfVrh": {
             "type": "product",
             "settings": {
-              "product": "black-leather-bag"
+              "product": "chequered-red-shirt"
+            }
+          },
+          "product_UYWDM7": {
+            "type": "product",
+            "settings": {
+              "product": "classic-leather-jacket"
+            }
+          },
+          "product_pgAQyF": {
+            "type": "product",
+            "settings": {
+              "product": "classic-varsity-top"
+            }
+          },
+          "product_W644YG": {
+            "type": "product",
+            "settings": {
+              "product": "dark-denim-top"
             }
           }
         },
         "block_order": [
-          "product_W644YG",
-          "product_pgAQyF",
-          "product_UYWDM7",
-          "product_VEfVrh",
+          "product_nXEJGe",
           "product_hW9Hna",
-          "product_nXEJGe"
+          "product_VEfVrh",
+          "product_UYWDM7",
+          "product_pgAQyF",
+          "product_W644YG"
         ],
         "settings": {}
       }
