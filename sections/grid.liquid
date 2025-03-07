@@ -1,10 +1,15 @@
 {{ "grid.css" | asset_url | stylesheet_tag }}
+<script src="{{  'grid.js' | asset_url }}" defer></script>
 
 <section class="products">
+
   <h3>Tisso vison in the wild</h3>
   <div class="grid">
     {% for product in collections.all.products limit: 6 %}
-      <div class="product-item">
+      <div
+        class="product-item"
+        data-product-id="{{product.id}}"
+        data-variant-id="{{ product.variants.first.id }}">
         <img
           class="product-image"
           src="{{product.featured_image |  image_url }}"
@@ -14,6 +19,76 @@
       </div>
     {% endfor %}
   </div>
+
+
+  <div id="overlay">
+    <div class="item">
+      <img
+        id="close-icon"
+        src="{{ 'x-icon.svg' |  asset_url }}"
+        alt=""
+        width="12px"
+        height="12px">
+
+      <div class="item-details">
+
+        <div class="item-head">
+          <img
+            id="item-image"
+            src="{{ 'test-prod.png' | asset_url }}"
+            alt="test image"
+            width="120px"
+            height="140px">
+          <div>
+            <p id="item-title"></p>
+            <p id="item-price"></p>
+            <p id="item-description"></p>
+          </div>
+        </div>
+
+        <div class="item-color">
+          <p>Color</p>
+          <div id="item-colors"></div>
+        </div>
+
+        <div class="dropdown">
+          <p>Size</p>
+          <button class="dropdown-btn">
+            Choose your size
+            <div class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="10"
+                viewBox="0 0 16 10"
+                fill="none">
+                <path
+                  d="M2 2L8 8L14 2"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="square" />
+              </svg>
+            </div>
+          </button>
+
+          <div class="dropdown-content"></div>
+
+          <button class="add-to-cart" id="addToCartBtn">
+            ADD TO CART
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="33"
+              height="13"
+              viewBox="0 0 28 13"
+              fill="none">
+              <path d="M1.11108 5.74396L0.361084 5.74396L0.361084 7.24396L1.11108 7.24396L1.11108 5.74396ZM27.1487 7.02429C27.4416 6.7314 27.4416 6.25652 27.1487 5.96363L22.3757 1.19066C22.0828 0.897765 21.6079 0.897765 21.315 1.19066C21.0221 1.48355 21.0221 1.95843 21.315 2.25132L25.5577 6.49396L21.315 10.7366C21.0221 11.0295 21.0221 11.5044 21.315 11.7973C21.6079 12.0902 22.0828 12.0902 22.3757 11.7973L27.1487 7.02429ZM1.11108 7.24396L26.6183 7.24396L26.6183 5.74396L1.11108 5.74396L1.11108 7.24396Z" fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 {% schema %}

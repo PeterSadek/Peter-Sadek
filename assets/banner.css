@@ -156,6 +156,10 @@ svg {
         margin-left: 16px;
     }
 
+    .light {
+        text-align: center;
+    }
+
     .nav {
         position: absolute;
         top: 50px;

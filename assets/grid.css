@@ -3,6 +3,17 @@
     src: url('https://cdn.shopify.com/s/files/1/0643/1313/1096/files/Lustria-Regular.ttf?v=1741106384');
 }
 
+@font-face {
+    font-family: 'JostMedium';
+    src: url('https://cdn.shopify.com/s/files/1/0643/1313/1096/files/Jost-Medium.ttf?v=1741106365');
+}
+
+@font-face {
+    font-family: 'JostLight';
+    src: url('https://cdn.shopify.com/s/files/1/0643/1313/1096/files/Jost-Light.ttf?v=1741196762');
+}
+
+/* Main grid styles */
 .products {
     padding: 90px 51px;
     font-family: 'LustriaRegular';
@@ -47,4 +58,213 @@
     .grid img {
         height: 185px;
     }
+}
+
+/* Product item popup styles */
+.item {
+    width: 311px;
+    height: 447px;
+    padding: 36px 17px 25px;
+    background-color: #fff;
+    position: relative;
+    font-family: 'JostLight';
+    box-shadow: 0px 2px 4px 0px #00000033;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#close-icon {
+    position: absolute;
+    top: 12px;
+    right: 15px
+}
+
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Product head */
+
+.item-head {
+    display: flex;
+    gap: 8px;
+    height: 140px;
+}
+
+.item-head div {
+    justify-self: flex-end;
+    overflow: hidden;
+}
+
+#item-image {
+    object-fit: cover;
+}
+
+#item-title {
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+#item-price {
+    font-family: 'LustriaRegular';
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0px;
+    margin: 11px 0;
+}
+
+#item-description {
+    font-size: 14px;
+    line-height: 15.4px;
+    letter-spacing: -1%;
+}
+
+/* Product color */
+
+/* .item-color {
+    margin: 10px 0;
+} */
+
+.item-color,
+.dropdown {
+    font-family: 'JostRegular';
+}
+
+.item-color {
+    margin-top: -10px;
+}
+
+.item-color p,
+.dropdown p {
+    font-size: 14px;
+    line-height: 18.2px;
+    letter-spacing: 0%;
+}
+
+.item-color div {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -2%;
+    display: flex;
+}
+
+.color-picker {
+    border: 1px solid grey;
+    /* border-left: 5px solid red; */
+    padding: 11px;
+    width: 130px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    transition: all 300ms ease-out;
+}
+
+.color-picker.selected-color {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Product size */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    width: 270px;
+    padding: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -2%;
+}
+
+.arrow {
+    transition: all 300ms ease-out;
+}
+
+.dropdown.open .arrow {
+    transform: rotate(-180deg);
+
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 270px;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 300ms ease-out, max-height 300ms ease-out;
+}
+
+.dropdown-content span {
+    color: #000;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -2%;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content span:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.dropdown.open .dropdown-content {
+    opacity: 1;
+    border: 2px solid #000;
+    max-height: 115px;
+    overflow: auto;
+}
+
+.add-to-cart {
+    background-color: #000;
+    color: #fff;
+    font-family: 'JostRegular';
+    font-size: 16px;
+    line-height: 20.48px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 271px;
+    padding: 12px 0;
+    text-align: center;
+    margin-top: 51px;
+}
+
+.add-to-cart svg {
+    margin-left: 28px;
+}
+
+/* Overlay styles */
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
