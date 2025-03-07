@@ -191,13 +191,12 @@
     letter-spacing: -2%;
 }
 
-.arrow {
+svg {
     transition: all 300ms ease-out;
 }
 
-.dropdown.open .arrow {
+.dropdown.open .arrow svg {
     transform: rotate(-180deg);
-
 }
 
 .dropdown-content {
